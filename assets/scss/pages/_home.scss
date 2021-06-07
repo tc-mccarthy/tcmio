@@ -1,0 +1,86 @@
+#home {
+  #hp-hero {
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgb(41, 41, 41);
+      color: #eee;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.65) 75%
+      );
+
+      @media (min-width: 681px) {
+        background: linear-gradient(
+          270deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.65) 75%
+        );
+      }
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 22px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+        font-size: 1.35rem;
+
+        span {
+          color: rgb(52, 52, 244);
+          font-weight: bold;
+        }
+
+        @media (min-width: 681px) {
+          left: 25%;
+          max-width: 45%;
+        }
+      }
+
+      &.active {
+        p {
+          top: 35%;
+          opacity: 1;
+        }
+      }
+    }
+
+    footer {
+      .social {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .contact {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        a {
+          &:before {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .contact,
+      .social {
+        a {
+          color: rgb(210, 210, 210);
+          text-decoration: none;
+          display: block;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
