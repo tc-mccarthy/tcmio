@@ -88,3 +88,21 @@ const resume = [
 const e_container = document.querySelector('#experience');
 
 ReactDOM.render(<Experience items={resume} />, e_container);
+
+/**
+ * Scroll-y nav
+ */
+
+document.querySelectorAll("nav [href*='#']").forEach((n) => {
+  n.addEventListener('click', (e) => {
+    e.preventDefault();
+    const item = e.target;
+    const location = document.querySelector(item.getAttribute('href'));
+
+    location.scrollIntoView({
+      behavior: 'smooth', // Defines the transition animation. default: auto
+      block: 'start', // Defines vertical alignment. default: start
+      inline: 'nearest' // Defines horizontal alignment. default: nearest
+    });
+  });
+});

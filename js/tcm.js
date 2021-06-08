@@ -747,6 +747,26 @@ var e_container = document.querySelector('#experience');
 _reactDom["default"].render( /*#__PURE__*/_react["default"].createElement(_experience["default"], {
   items: resume
 }), e_container);
+/**
+ * Scroll-y nav
+ */
+
+
+document.querySelectorAll("nav [href*='#']").forEach(function (n) {
+  n.addEventListener('click', function (e) {
+    e.preventDefault();
+    var item = e.target;
+    var location = document.querySelector(item.getAttribute('href'));
+    location.scrollIntoView({
+      behavior: 'smooth',
+      // Defines the transition animation. default: auto
+      block: 'start',
+      // Defines vertical alignment. default: start
+      inline: 'nearest' // Defines horizontal alignment. default: nearest
+
+    });
+  });
+});
 
 },{"./components/portfolio.jsx":1,"./components/resume/experience.jsx":4,"./plugins/Watch.js":5,"react":23,"react-dom":17}],8:[function(require,module,exports){
 /*
