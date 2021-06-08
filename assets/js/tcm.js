@@ -82,6 +82,15 @@ const resume = [
       'Liaised with our multimedia and legal teams to find a suitable vendor and workflow for automated video closed-captioning.',
       'Results were a resounding success where captions are hitting newsday.com videos on all platforms within 8 hours (as required by New York law) without any additional action being required by the multimedia team or the web team responsible for publishing and placement.'
     ]
+  },
+  {
+    title: 'News Applications Editor',
+    date: 'Nov. 2014 - April 2018',
+    company: 'Newsday Media Group',
+    items: [
+      'Developed improved workflow automation to allow producers better access for construction storytelling experiences using video and other multimedia without developer or designer assistance',
+      'Rebuilt our custom video player to improve performance and leverage modern conventions for autoplay, analytics and mobile experience. Video delivers heartbeat and media metrics for Adobe Analytics and Google Analytics'
+    ]
   }
 ];
 

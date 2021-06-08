@@ -614,6 +614,36 @@ figcaption {
     padding: 5px 0;
   }
 }
+/* line 1, ../assets/scss/components/_nav.scss */
+nav {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: auto;
+  z-index: 2;
+}
+@media (min-width: 681px) {
+  /* line 1, ../assets/scss/components/_nav.scss */
+  nav {
+    left: 40px;
+  }
+}
+/* line 12, ../assets/scss/components/_nav.scss */
+nav ul {
+  padding: 0;
+}
+/* line 15, ../assets/scss/components/_nav.scss */
+nav ul li {
+  display: inline;
+  list-style: none;
+  margin-right: 10px;
+}
+/* line 20, ../assets/scss/components/_nav.scss */
+nav ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+
 /* line 1, ../assets/scss/components/_portfolio.scss */
 #portfolio {
   flex-wrap: wrap;
@@ -656,35 +686,37 @@ figcaption {
 .resume .item {
   padding: 0 22px 10px;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateY(35px);
 }
-/* line 7, ../assets/scss/components/_resume.scss */
+/* line 8, ../assets/scss/components/_resume.scss */
 .resume .item.active {
   opacity: 1;
+  transform: translateY(0);
 }
-/* line 10, ../assets/scss/components/_resume.scss */
+/* line 12, ../assets/scss/components/_resume.scss */
 .resume .item h3,
 .resume .item h5 {
   padding: 0;
   margin: 0;
 }
-/* line 16, ../assets/scss/components/_resume.scss */
+/* line 18, ../assets/scss/components/_resume.scss */
 .resume .item header {
   display: flex;
   justify-content: space-between;
   background-color: transparent;
   padding: 0;
 }
-/* line 22, ../assets/scss/components/_resume.scss */
+/* line 24, ../assets/scss/components/_resume.scss */
 .resume .item header h3,
 .resume .item header div {
   flex: 1;
 }
-/* line 27, ../assets/scss/components/_resume.scss */
+/* line 29, ../assets/scss/components/_resume.scss */
 .resume .item header div {
   text-align: right;
 }
-/* line 32, ../assets/scss/components/_resume.scss */
+/* line 34, ../assets/scss/components/_resume.scss */
 .resume .item ul {
   line-height: 1.5em;
   font-size: 1.2em;
@@ -710,25 +742,6 @@ figcaption {
   position: relative;
 }
 /* line 5, ../assets/scss/pages/_home.scss */
-#home #hp-hero nav {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: auto;
-  z-index: 2;
-}
-/* line 13, ../assets/scss/pages/_home.scss */
-#home #hp-hero nav ul li {
-  display: inline;
-  list-style: none;
-  margin-right: 10px;
-}
-/* line 18, ../assets/scss/pages/_home.scss */
-#home #hp-hero nav ul li a {
-  text-decoration: none;
-  color: #eee;
-}
-/* line 26, ../assets/scss/pages/_home.scss */
 #home #hp-hero .overlay {
   position: absolute;
   height: 100%;
@@ -740,12 +753,12 @@ figcaption {
   background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.65) 75%);
 }
 @media (min-width: 681px) {
-  /* line 26, ../assets/scss/pages/_home.scss */
+  /* line 5, ../assets/scss/pages/_home.scss */
   #home #hp-hero .overlay {
     background: linear-gradient(270deg, transparent 0%, rgba(0, 0, 0, 0.65) 75%);
   }
 }
-/* line 48, ../assets/scss/pages/_home.scss */
+/* line 27, ../assets/scss/pages/_home.scss */
 #home #hp-hero .overlay p {
   position: absolute;
   top: 50%;
@@ -757,42 +770,42 @@ figcaption {
   transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
   font-size: 1.35rem;
 }
-/* line 59, ../assets/scss/pages/_home.scss */
+/* line 38, ../assets/scss/pages/_home.scss */
 #home #hp-hero .overlay p strong {
   display: inline-block;
   background-color: #b97d10;
   padding: 5px;
 }
 @media (min-width: 681px) {
-  /* line 48, ../assets/scss/pages/_home.scss */
+  /* line 27, ../assets/scss/pages/_home.scss */
   #home #hp-hero .overlay p {
     left: 25%;
     max-width: 45%;
   }
 }
-/* line 72, ../assets/scss/pages/_home.scss */
+/* line 51, ../assets/scss/pages/_home.scss */
 #home #hp-hero .overlay.active p {
   top: 35%;
   opacity: 1;
 }
-/* line 80, ../assets/scss/pages/_home.scss */
+/* line 59, ../assets/scss/pages/_home.scss */
 #home #hp-hero footer .social {
   position: absolute;
   bottom: 20px;
   right: 10px;
   font-size: 1.3em;
 }
-/* line 87, ../assets/scss/pages/_home.scss */
+/* line 66, ../assets/scss/pages/_home.scss */
 #home #hp-hero footer .contact {
   position: absolute;
   bottom: 20px;
   left: 10px;
 }
-/* line 92, ../assets/scss/pages/_home.scss */
+/* line 71, ../assets/scss/pages/_home.scss */
 #home #hp-hero footer .contact a:before {
   margin-right: 5px;
 }
-/* line 100, ../assets/scss/pages/_home.scss */
+/* line 79, ../assets/scss/pages/_home.scss */
 #home #hp-hero footer .contact a,
 #home #hp-hero footer .social a {
   color: #d2d2d2;
@@ -801,11 +814,11 @@ figcaption {
   margin-top: 5px;
 }
 @media (min-width: 681px) {
-  /* line 109, ../assets/scss/pages/_home.scss */
+  /* line 88, ../assets/scss/pages/_home.scss */
   #home #hp-hero footer .contact {
     left: 15px;
   }
-  /* line 113, ../assets/scss/pages/_home.scss */
+  /* line 92, ../assets/scss/pages/_home.scss */
   #home #hp-hero footer .social {
     right: 15px;
   }

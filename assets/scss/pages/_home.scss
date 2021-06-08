@@ -2,27 +2,6 @@
   #hp-hero {
     position: relative;
 
-    nav {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: auto;
-      z-index: 2;
-
-      ul {
-        li {
-          display: inline;
-          list-style: none;
-          margin-right: 10px;
-
-          a {
-            text-decoration: none;
-            color: #eee;
-          }
-        }
-      }
-    }
-
     .overlay {
       position: absolute;
       height: 100%;
