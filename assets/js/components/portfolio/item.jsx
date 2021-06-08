@@ -6,8 +6,7 @@ class Item extends Component {
     static propTypes = {
       link: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
-      headline: PropTypes.string.isRequired,
-      reveal: PropTypes.func.isRequired
+      headline: PropTypes.string.isRequired
     }
 
     state = {
@@ -16,11 +15,11 @@ class Item extends Component {
     }
 
     itemClass () {
-      const { inView } = this.state;
+      const { show } = this.state;
 
       const classes = ['item'];
 
-      if (inView) {
+      if (show) {
         classes.push('active');
       }
 
@@ -35,7 +34,7 @@ class Item extends Component {
     reveal (e) {
       setTimeout(() => {
         this.setState({ show: true });
-      }, 1 * 1000);
+      }, 250);
     }
 
     picture () {

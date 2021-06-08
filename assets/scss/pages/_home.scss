@@ -2,6 +2,27 @@
   #hp-hero {
     position: relative;
 
+    nav {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: auto;
+      z-index: 2;
+
+      ul {
+        li {
+          display: inline;
+          list-style: none;
+          margin-right: 10px;
+
+          a {
+            text-decoration: none;
+            color: #eee;
+          }
+        }
+      }
+    }
+
     .overlay {
       position: absolute;
       height: 100%;
@@ -35,9 +56,10 @@
         transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
         font-size: 1.35rem;
 
-        span {
-          color: rgb(52, 52, 244);
-          font-weight: bold;
+        strong {
+          display: inline-block;
+          background-color: #b97d10;
+          padding: 5px;
         }
 
         @media (min-width: 681px) {
@@ -57,13 +79,14 @@
     footer {
       .social {
         position: absolute;
-        bottom: 10px;
+        bottom: 20px;
         right: 10px;
+        font-size: 1.3em;
       }
 
       .contact {
         position: absolute;
-        bottom: 10px;
+        bottom: 20px;
         left: 10px;
         a {
           &:before {
@@ -79,6 +102,16 @@
           text-decoration: none;
           display: block;
           margin-top: 5px;
+        }
+      }
+
+      @media (min-width: 681px) {
+        .contact {
+          left: 15px;
+        }
+
+        .social {
+          right: 15px;
         }
       }
     }

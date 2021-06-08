@@ -14,7 +14,9 @@
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
     <!-- Your styles should be called here -->
     <link rel="stylesheet" href="css/style.min.css" />
@@ -28,23 +30,25 @@
 </head>
 
 <body id="home">
-    <header>
-        <h1>TC <span>McCarthy</span></h1>
-    </header>
-
     <section id="hp-hero" class="container hero">
+        <nav>
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Résumé</a></li>
+            </ul>
+        </nav>
         <picture>
             <source srcset="img/hp-splash-1.jpg" media="(min-width: 681px)" />
             <img src="img/hp-splash-1-vert.jpg" />
         </picture>
         <div class="overlay">
-            <p>I'm <span>TC</span> McCarthy, the Director of Digital Technology for Newsday, where I plan infrastructure, lead a team of
+            <p>I'm <strong>TC McCarthy,</strong> the Director of Digital Technology for Newsday, where I plan infrastructure, lead a team of
                 devs and write awesome code. </p>
         </div>
         <footer>
             <section class="social">
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+                <a href="https://www.twitter.com/tc_mccarthy" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/mccarthytc/" class="fa fa-linkedin"></a>
             </section>
             <section class="contact">
                 <a href="mailto:tc.mccarthy1@gmail.com" class="fa fa-envelope">tc.mccarthy1@gmail.com</a>
@@ -52,12 +56,97 @@
         </footer>
     </section>
 
-    <section>
+    <section id="work">
         <div class="container image">
-            <h3>My work</h3>
+            <h2>My work</h2>
             <div id="portfolio" class="flex"></div>
         </div>
-        
+    </section>
+
+    <section id="resume" class="owhite resume">
+        <div class="container image">
+            <h2>Experience</h2>
+            <div id="experience"></div>
+        </div>
+    </section>
+
+    <section class="resume">
+        <div class="container image">
+            <h2>Skills</h2>
+            <div id="skills">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Javascript (esNext)</li>
+                    <li>jQuery</li>
+                    <li>ReactJS</li>
+                    <li>AngularJS</li>
+                    <li>ReactJS</li>
+                    <li>NextJS</li>
+                    <li>GruntJS</li>
+                    <li>NodeJS</li>
+                    <li>Docker</li>
+                    <li>Vagrant</li>
+                    <li>PHP7 (FPM and apache mod)</li>
+                    <li>Drupal</li>
+                    <li>WordPress</li>
+                    <li>Laravel</li>
+                    <li>Yii</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Nginx</li>
+                    <li>Apache</li>
+                    <li>Ubuntu Server</li>
+                    <li>CentOS</li>
+                    <li>RHEL</li>
+                    <li>Adobe Analytics</li>
+                    <li>Google Analytics</li>
+                    <li>Python</li>
+                    <li>NodeJS</li>
+                    <li>AWS EC2/SQS/SNS/DocumentDB/RDS/S3</li>
+                    <li>Final Cut Pro</li>
+                    <li>Premiere Pro</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Indesign</li>
+                    <li>OBS</li>
+                    <li>Adobe Audition</li>
+                    <li>DSLR cameras</li>
+                    <li>mobile photography/videography</li>
+                    <li>blackmagic video hardware</li>
+                    <li>ffmpeg</li>
+                    <li>SoundCloud</li>
+                    <li>Brightcove</li>
+                    <li>VideoJS</li>
+                    <li>Mac</li>
+                    <li>Windows and Linux proficient</li>
+                    <li>Office proficient</li>
+                    <li>Bash</li>
+                    <li>zsh</li>
+                    <li>DOS</li>
+                    <li>PERL</li>
+                    <li>Python</li>
+                    <li>SVN/GIT</li>                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="owhite resume">
+        <div class="container image">
+            <h2>Education</h2>
+            <div id="education">
+                <div class="item active">
+                    <header>
+                        <h3>Bachelor of Arts, Journalism</h3>
+                        <div>2007 - 2010</div>
+                    </header>
+                    <h5>Stony Brook University</h5>
+                    <p>Concentration in broadcast journalism</p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Your javascript should be called here -->
     <script src="js/tcm.js" async></script>

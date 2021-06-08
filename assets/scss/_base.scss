@@ -4,7 +4,7 @@
 body,
 html {
   font-size: 16px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 figure {
@@ -20,6 +20,16 @@ img {
 p {
   line-height: 1.2em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 header {
   padding: 10px 35px;
@@ -29,6 +39,7 @@ header {
     color: rgb(210, 210, 210);
     font-size: 1.5rem;
     text-align: center;
+    text-transform: initial;
 
     span {
       color: rgb(80, 80, 80);
@@ -37,6 +48,16 @@ header {
     @media (min-width: 681px) {
       text-align: left;
     }
+  }
+}
+
+section {
+  h2 {
+    padding: 22px;
+  }
+
+  &.owhite {
+    background-color: rgb(230, 230, 230);
   }
 }
 
@@ -55,6 +76,7 @@ figcaption {
   max-width: 800px;
   padding: 10px;
   margin: 0 auto;
+
   &.image {
     max-width: 1200px;
     padding: 0;
@@ -69,7 +91,7 @@ figcaption {
   &.hero {
     max-width: 1920px;
     padding: 0;
-    height: calc(100vh - 80px);
+    height: 100vh;
     overflow: hidden;
 
     img {
