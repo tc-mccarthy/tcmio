@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Watch from './plugins/Watch.js';
 import Portfolio from './components/portfolio.jsx';
 import Experience from './components/resume/experience.jsx';
+import Awards from './components/resume/awards.jsx';
 
 document.querySelectorAll('.overlay').forEach((o) => {
   new Watch(o).oneInView(() => {
@@ -91,6 +92,17 @@ const resume = [
       'Developed improved workflow automation to allow producers better access for construction storytelling experiences using video and other multimedia without developer or designer assistance',
       'Rebuilt our custom video player to improve performance and leverage modern conventions for autoplay, analytics and mobile experience. Video delivers heartbeat and media metrics for Adobe Analytics and Google Analytics'
     ]
+  },
+  {
+    title: 'McCarthy Digital Consulting',
+    date: '2014 - Present',
+    company: '',
+    items: [
+      'Developed a cloud-based MXF encoder so that Zoom records could be remotely transcoded for AVID and placed in a shared space so that producers, engineers and editors have access to the resulting file as they do in the office. Leverages AWS S3, SQS and ffmpeg',
+      'Developed a redundant, high speed, highly efficient hosting environment for my clients, complete with automated disaster recovery umbrella.',
+      'Built a wordpress integration platform for sasf.org, a local animal shelter, automating its pet pages',
+      'Built a nextgen image service that serves images in AVIF, WebP and JP2 formats at request time'
+    ]
   }
 ];
 
@@ -115,3 +127,31 @@ document.querySelectorAll("nav [href*='#']").forEach((n) => {
     });
   });
 });
+
+/**
+ * Awards
+ */
+const awards = [
+  {
+    title: 'Peabody Award',
+    date: '2019',
+    project: 'Long Island Divided',
+    link: 'https://www.newsday.com/divided'
+  },
+  {
+    title: 'George Polk Award — Metropolitan Reporting',
+    date: '2019',
+    project: 'Long Island Divided',
+    link: 'https://www.newsday.com/divided'
+  },
+  {
+    title: 'New York Emmy — Interactive',
+    date: '2016',
+    project: 'Chris Weidman: The Fighter and the Father',
+    link: 'https://projects.newsday.com/projects/sports/mma/chris-weidman-ufc-life/'
+  }
+];
+
+const a_container = document.querySelector('#awards');
+
+ReactDOM.render(<Awards items={awards} />, a_container);

@@ -9,14 +9,18 @@
     <!-- first step to a responsive site -->
     <title>TC McCarthy</title>
 
+    <!--  PRECONNECT  -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"/
+    >
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'" />
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+        media="print" onload="this.media='all'">
 
     <!-- Your styles should be called here -->
     <link rel="stylesheet" href="css/style.min.css" />
@@ -39,7 +43,7 @@
         </nav>
         <picture>
             <source srcset="img/hp-splash-1.jpg" media="(min-width: 681px)" />
-            <img src="img/hp-splash-1-vert.jpg" />
+            <img src="img/hp-splash-1-vert.jpg"  alt="Iron man" />
         </picture>
         <div class="overlay">
             <p>I'm <strong>TC McCarthy,</strong> the Director of Digital Technology for Newsday, where I plan infrastructure, lead a team of
@@ -146,6 +150,13 @@
                     <p>Concentration in broadcast journalism</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="resume">
+        <div class="container image">
+            <h2>Awards</h2>
+            <div id="awards"></div>
         </div>
     </section>
     <!-- Your javascript should be called here -->

@@ -1,0 +1,13 @@
+#awards {
+  a {
+    color: #111;
+    text-decoration: none;
+
+    &:after {
+      font-family: FontAwesome;
+      margin-left: 10px;
+      font-size: 1.2em;
+      content: "\f08e";
+    }
+  }
+}
