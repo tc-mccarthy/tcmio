@@ -6,7 +6,8 @@ class Item extends Component {
     static propTypes = {
       link: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
-      headline: PropTypes.string.isRequired
+      headline: PropTypes.string.isRequired,
+      award: PropTypes.bool
     }
 
     state = {
@@ -16,11 +17,16 @@ class Item extends Component {
 
     itemClass () {
       const { show } = this.state;
+      const { award } = this.props;
 
       const classes = ['item'];
 
       if (show) {
         classes.push('active');
+      }
+
+      if (award) {
+        classes.push('award');
       }
 
       return classes.join(' ');
@@ -43,7 +49,9 @@ class Item extends Component {
 
       if (inView) {
         return (<picture>
-          <img ref={this.ref} src={image} width="640" height="360" alt={headline} onLoad={e => { this.reveal(e); }} />
+          <source srcSet={`img/projects/${image}.avif`} type='image/avif' />
+          <source srcSet={`img/projects/${image}.webp`} type='image/webp' />
+          <img ref={this.ref} src={`img/projects/${image}.jpg`} width="640" height="360" alt={headline} onLoad={e => { this.reveal(e); }} />
         </picture>);
       }
 
@@ -60,12 +68,23 @@ class Item extends Component {
       });
     }
 
+    award () {
+      const { award } = this.props;
+
+      if (award) {
+        return (<><div className="overlay" /><i className="fa fa-trophy" /></>);
+      }
+    }
+
     render () {
       const { link, headline } = this.props;
       return (
         <div className={this.itemClass()}>
           <a href={link}>
-            {this.picture()}
+            <div className='thumb'>
+              {this.picture()}
+              {this.award()}
+            </div>
             <span>{headline}</span>
           </a>
 

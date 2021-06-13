@@ -15,49 +15,37 @@ document.querySelectorAll('.overlay').forEach((o) => {
 
 const portfolio_items = [
   {
-    headline: 'Item 1',
-    link: '#item_1',
-    image: 'https://picsum.photos/640/360'
+    headline: 'Long Island Divided',
+    link: 'https://www.newsday.com/divided',
+    image: 'divided',
+    award: true
   },
   {
-    headline: 'Item 2',
-    link: '#item_2',
-    image: 'https://picsum.photos/640/360'
+    headline: 'Chris Weidman: The Fighter and the Father',
+    link: 'https://projects.newsday.com/projects/sports/mma/chris-weidman-ufc-life/',
+    image: 'weidman',
+    award: true
   },
   {
-    headline: 'Item 3',
-    link: '#item_3',
-    image: 'https://picsum.photos/640/360'
+    headline: 'Tracking the Coronavirus (Data Dashboard)',
+    link: 'https://projects.newsday.com/long-island/tracking-the-coronavirus-on-long-island/',
+    image: 'covid',
+    award: true
   },
   {
-    headline: 'Item 4',
-    link: '#item_4',
-    image: 'https://picsum.photos/640/360'
+    headline: 'Pledge4Pearson',
+    link: 'https://www.pledge4pearson.org',
+    image: 'p4p'
   },
   {
-    headline: 'Item 5',
-    link: '#item_5',
-    image: 'https://picsum.photos/640/360'
+    headline: 'SASF.org',
+    link: 'https://sasf.org',
+    image: 'sasf'
   },
   {
-    headline: 'Item 6',
-    link: '#item_6',
-    image: 'https://picsum.photos/640/360'
-  },
-  {
-    headline: 'Item 7',
-    link: '#item_7',
-    image: 'https://picsum.photos/640/360'
-  },
-  {
-    headline: 'Item 8',
-    link: '#item_8',
-    image: 'https://picsum.photos/640/360'
-  },
-  {
-    headline: 'Item 9',
-    link: '#item_9',
-    image: 'https://picsum.photos/640/360'
+    headline: 'NextGen Image Service',
+    link: 'https://github.com/tc-mccarthy/nextgen-image-service',
+    image: 'image_service'
   }
 ];
 

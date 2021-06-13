@@ -135,10 +135,15 @@ var Item = /*#__PURE__*/function (_Component) {
     key: "itemClass",
     value: function itemClass() {
       var show = this.state.show;
+      var award = this.props.award;
       var classes = ['item'];
 
       if (show) {
         classes.push('active');
+      }
+
+      if (award) {
+        classes.push('award');
       }
 
       return classes.join(' ');
@@ -165,9 +170,15 @@ var Item = /*#__PURE__*/function (_Component) {
           image = _this$props.image;
 
       if (inView) {
-        return /*#__PURE__*/_react["default"].createElement("picture", null, /*#__PURE__*/_react["default"].createElement("img", {
+        return /*#__PURE__*/_react["default"].createElement("picture", null, /*#__PURE__*/_react["default"].createElement("source", {
+          srcSet: "img/projects/".concat(image, ".avif"),
+          type: "image/avif"
+        }), /*#__PURE__*/_react["default"].createElement("source", {
+          srcSet: "img/projects/".concat(image, ".webp"),
+          type: "image/webp"
+        }), /*#__PURE__*/_react["default"].createElement("img", {
           ref: this.ref,
-          src: image,
+          src: "img/projects/".concat(image, ".jpg"),
           width: "640",
           height: "360",
           alt: headline,
@@ -198,6 +209,19 @@ var Item = /*#__PURE__*/function (_Component) {
       });
     }
   }, {
+    key: "award",
+    value: function award() {
+      var award = this.props.award;
+
+      if (award) {
+        return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
+          className: "overlay"
+        }), /*#__PURE__*/_react["default"].createElement("i", {
+          className: "fa fa-trophy"
+        }));
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this$props2 = this.props,
@@ -207,7 +231,9 @@ var Item = /*#__PURE__*/function (_Component) {
         className: this.itemClass()
       }, /*#__PURE__*/_react["default"].createElement("a", {
         href: link
-      }, this.picture(), /*#__PURE__*/_react["default"].createElement("span", null, headline)));
+      }, /*#__PURE__*/_react["default"].createElement("div", {
+        className: "thumb"
+      }, this.picture(), this.award()), /*#__PURE__*/_react["default"].createElement("span", null, headline)));
     }
   }]);
 
@@ -217,7 +243,8 @@ var Item = /*#__PURE__*/function (_Component) {
 _defineProperty(Item, "propTypes", {
   link: _propTypes["default"].string.isRequired,
   image: _propTypes["default"].string.isRequired,
-  headline: _propTypes["default"].string.isRequired
+  headline: _propTypes["default"].string.isRequired,
+  award: _propTypes["default"].bool
 });
 
 module.exports = Item;
@@ -882,41 +909,32 @@ document.querySelectorAll('.overlay').forEach(function (o) {
   });
 });
 var portfolio_items = [{
-  headline: 'Item 1',
-  link: '#item_1',
-  image: 'https://picsum.photos/640/360'
+  headline: 'Long Island Divided',
+  link: 'https://www.newsday.com/divided',
+  image: 'divided',
+  award: true
 }, {
-  headline: 'Item 2',
-  link: '#item_2',
-  image: 'https://picsum.photos/640/360'
+  headline: 'Chris Weidman: The Fighter and the Father',
+  link: 'https://projects.newsday.com/projects/sports/mma/chris-weidman-ufc-life/',
+  image: 'weidman',
+  award: true
 }, {
-  headline: 'Item 3',
-  link: '#item_3',
-  image: 'https://picsum.photos/640/360'
+  headline: 'Tracking the Coronavirus (Data Dashboard)',
+  link: 'https://projects.newsday.com/long-island/tracking-the-coronavirus-on-long-island/',
+  image: 'covid',
+  award: true
 }, {
-  headline: 'Item 4',
-  link: '#item_4',
-  image: 'https://picsum.photos/640/360'
+  headline: 'Pledge4Pearson',
+  link: 'https://www.pledge4pearson.org',
+  image: 'p4p'
 }, {
-  headline: 'Item 5',
-  link: '#item_5',
-  image: 'https://picsum.photos/640/360'
+  headline: 'SASF.org',
+  link: 'https://sasf.org',
+  image: 'sasf'
 }, {
-  headline: 'Item 6',
-  link: '#item_6',
-  image: 'https://picsum.photos/640/360'
-}, {
-  headline: 'Item 7',
-  link: '#item_7',
-  image: 'https://picsum.photos/640/360'
-}, {
-  headline: 'Item 8',
-  link: '#item_8',
-  image: 'https://picsum.photos/640/360'
-}, {
-  headline: 'Item 9',
-  link: '#item_9',
-  image: 'https://picsum.photos/640/360'
+  headline: 'NextGen Image Service',
+  link: 'https://github.com/tc-mccarthy/nextgen-image-service',
+  image: 'image_service'
 }];
 var p_container = document.querySelector('#portfolio');
 
