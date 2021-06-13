@@ -73,14 +73,14 @@ const resume = [
     ]
   },
   {
-    title: 'News Applications Editor',
-    date: 'Nov. 2014 - April 2018',
-    company: 'Newsday Media Group',
+    title: 'Adjunct Professor',
+    date: 'Nov. 2013 - Present',
+    company: 'CUNY Graduate School of Journalism',
     items: [
-      'Developed improved workflow automation to allow producers better access for construction storytelling experiences using video and other multimedia without developer or designer assistance',
-      'Rebuilt our custom video player to improve performance and leverage modern conventions for autoplay, analytics and mobile experience. Video delivers heartbeat and media metrics for Adobe Analytics and Google Analytics',
-      'Rewrote our GPT ad script in implemented prebid.js',
-      'Rewrote our videojs-based video player to integrate with Brightcove CDN and IMA3 uusing ES6 classes and intersection observer for lazy loading.'
+      'Teach an intro course that covers HTML, CSS and data journalism',
+      'Teach an intermediate course that expands on HTML and CSS and introduces Javascript',
+      'Teach an advanced course that expands on JS and interactive storytelliing',
+      'Teach a 10-week workshop that covers data scraping using Python, NodeJS and MySQL'
     ]
   },
   {
@@ -92,6 +92,28 @@ const resume = [
       'Developed a redundant, high speed, highly efficient hosting environment for my clients, complete with automated disaster recovery umbrella.',
       'Built a wordpress integration platform for sasf.org, a local animal shelter, automating its pet pages',
       'Built a nextgen image service that serves images in AVIF, WebP and JP2 formats at request time'
+    ]
+  },
+  {
+    title: 'News Applications Editor',
+    date: 'Nov. 2014 - April 2018',
+    company: 'Newsday Media Group',
+    items: [
+      'Developed improved workflow automation to allow producers better access for construction storytelling experiences using video and other multimedia without developer or designer assistance',
+      'Rebuilt our custom video player to improve performance and leverage modern conventions for autoplay, analytics and mobile experience. Video delivers heartbeat and media metrics for Adobe Analytics and Google Analytics',
+      'Rewrote our GPT ad script in implemented prebid.js',
+      'Rewrote our videojs-based video player to integrate with Brightcove CDN and IMA3 uusing ES6 classes and intersection observer for lazy loading.'
+    ]
+  },
+  {
+    title: 'Senior Web Developer',
+    date: 'June 2014 - Nov. 2014',
+    company: 'Vice Media',
+    items: [
+      'Built new functionality for existing verticals (independent, Vice-run websites)',
+      'Worked on proprietary functionality like an image service which allows for the dynamic resizing and quality adjustment on the fly based on URL',
+      'Managed project planning (sprint planning) in an Agile development environment',
+      'Built out a video management system that allows for HTML5 conversion through the CMS'
     ]
   }
 ];

@@ -1007,15 +1007,25 @@ var resume = [{
   company: 'Newsday Media Group',
   items: ['Supervise two teams of full stack developers responsible for all CMS, website, publishing system and special project development', 'Plan and execute technical innovations, such as a video service that generates loops in multiple formats (gif, webp and mp4), encodes and compress video for IGTV and Facebook for optimal quality at smallest possible size. Service is integrated into company Slack for seamless producer workflow (especially while remote on residential internet connections) as well as our existing content publishing system', 'Developed and employed technical strategy for remote live streaming during COVID-19', 'Leverage Adobe Premiere Pro, motion graphics and OBS to produce fully-remote multi-camera live streams complete with lower thirds, SOTs and clips via Zoom/GoToWebinar.', 'Built a ReactJS-based web UI to handle viewer registration, analytics and question submission.', 'Live stream distributed by Brightcove in 9 renditions allowing best experience for all devices and connection speeds.', 'Developed automated mastering service using ffmpeg to trim and recompress DVR versions for lower storage costs, crops and trims video into a square "social cut" and auto uploaded the final product to AWS S3 which served as a cloud-based MAM while staff was remote.', 'Govern and maintain our special projects infrastructure in an AWS hosting environment that allows several different generations of tech to coexist seamlessly to our end users while facilitating constant migration to new technology Spearheaded digital development of Polk Award-winning story Long Island Divided (https://projects.newsday.com/long-island/real-estate-agents-investigation/), a 3-year hidden-camera investigation into the racial profiling that happens in the real-estate market on Long Island. Built custom video implementations for optimal experience across all devices and connection speeds', 'Managed Election 2020 digital development plan where my homegrown election system served live results for newsday.com, the newsday app, feeds for our print product and real-time data updates for VizRT graphics in our live stream. Worked with VizRT specialists and studio artists for feed construction and adequate infrastructure for load.', 'Liaised with our multimedia and legal teams to find a suitable vendor and workflow for automated video closed-captioning.', 'Results were a resounding success where captions are hitting newsday.com videos on all platforms within 8 hours (as required by New York law) without any additional action being required by the multimedia team or the web team responsible for publishing and placement.']
 }, {
-  title: 'News Applications Editor',
-  date: 'Nov. 2014 - April 2018',
-  company: 'Newsday Media Group',
-  items: ['Developed improved workflow automation to allow producers better access for construction storytelling experiences using video and other multimedia without developer or designer assistance', 'Rebuilt our custom video player to improve performance and leverage modern conventions for autoplay, analytics and mobile experience. Video delivers heartbeat and media metrics for Adobe Analytics and Google Analytics', 'Rewrote our GPT ad script in implemented prebid.js', 'Rewrote our videojs-based video player to integrate with Brightcove CDN and IMA3 uusing ES6 classes and intersection observer for lazy loading.']
+  title: 'Adjunct Professor',
+  date: 'Nov. 2013 - Present',
+  company: 'CUNY Graduate School of Journalism',
+  items: ['Teach an intro course that covers HTML, CSS and data journalism', 'Teach an intermediate course that expands on HTML and CSS and introduces Javascript', 'Teach an advanced course that expands on JS and interactive storytelliing', 'Teach a 10-week workshop that covers data scraping using Python, NodeJS and MySQL']
 }, {
   title: 'McCarthy Digital Consulting',
   date: '2014 - Present',
   company: '',
   items: ['Developed a cloud-based MXF encoder so that Zoom records could be remotely transcoded for AVID and placed in a shared space so that producers, engineers and editors have access to the resulting file as they do in the office. Leverages AWS S3, SQS and ffmpeg', 'Developed a redundant, high speed, highly efficient hosting environment for my clients, complete with automated disaster recovery umbrella.', 'Built a wordpress integration platform for sasf.org, a local animal shelter, automating its pet pages', 'Built a nextgen image service that serves images in AVIF, WebP and JP2 formats at request time']
+}, {
+  title: 'News Applications Editor',
+  date: 'Nov. 2014 - April 2018',
+  company: 'Newsday Media Group',
+  items: ['Developed improved workflow automation to allow producers better access for construction storytelling experiences using video and other multimedia without developer or designer assistance', 'Rebuilt our custom video player to improve performance and leverage modern conventions for autoplay, analytics and mobile experience. Video delivers heartbeat and media metrics for Adobe Analytics and Google Analytics', 'Rewrote our GPT ad script in implemented prebid.js', 'Rewrote our videojs-based video player to integrate with Brightcove CDN and IMA3 uusing ES6 classes and intersection observer for lazy loading.']
+}, {
+  title: 'Senior Web Developer',
+  date: 'June 2014 - Nov. 2014',
+  company: 'Vice Media',
+  items: ['Built new functionality for existing verticals (independent, Vice-run websites)', 'Worked on proprietary functionality like an image service which allows for the dynamic resizing and quality adjustment on the fly based on URL', 'Managed project planning (sprint planning) in an Agile development environment', 'Built out a video management system that allows for HTML5 conversion through the CMS']
 }];
 var e_container = document.querySelector('#experience');
 
