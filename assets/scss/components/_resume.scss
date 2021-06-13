@@ -9,6 +9,10 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    &.expand .btn {
+      opacity: 0;
+    }
     h3,
     h5 {
       padding: 0;
@@ -34,6 +38,22 @@
     ul {
       line-height: 1.5em;
       font-size: 1.2em;
+
+      &.more {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease-in-out;
+        margin-top: -1em;
+      }
+    }
+
+    .expand {
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: #ccc;
+      text-decoration: none;
+      padding: 5px;
     }
   }
 }

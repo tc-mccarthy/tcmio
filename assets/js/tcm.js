@@ -78,7 +78,9 @@ const resume = [
     company: 'Newsday Media Group',
     items: [
       'Developed improved workflow automation to allow producers better access for construction storytelling experiences using video and other multimedia without developer or designer assistance',
-      'Rebuilt our custom video player to improve performance and leverage modern conventions for autoplay, analytics and mobile experience. Video delivers heartbeat and media metrics for Adobe Analytics and Google Analytics'
+      'Rebuilt our custom video player to improve performance and leverage modern conventions for autoplay, analytics and mobile experience. Video delivers heartbeat and media metrics for Adobe Analytics and Google Analytics',
+      'Rewrote our GPT ad script in implemented prebid.js',
+      'Rewrote our videojs-based video player to integrate with Brightcove CDN and IMA3 uusing ES6 classes and intersection observer for lazy loading.'
     ]
   },
   {

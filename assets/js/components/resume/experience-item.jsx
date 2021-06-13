@@ -11,16 +11,21 @@ class Item extends Component {
     }
 
     state = {
-      inView: false
+      inView: false,
+      more_height: 0
     }
 
     itemClass () {
-      const { inView } = this.state;
+      const { inView, more_height } = this.state;
 
       const classes = ['item'];
 
       if (inView) {
         classes.push('active');
+      }
+
+      if (more_height) {
+        classes.push('expand');
       }
 
       return classes.join(' ');
@@ -29,6 +34,7 @@ class Item extends Component {
     constructor (props) {
       super(props);
       this.ref = React.createRef();
+      this.more_ref = React.createRef();
     }
 
     componentDidMount () {
@@ -39,8 +45,35 @@ class Item extends Component {
       });
     }
 
+    more_class () {
+      const { expand } = this.state;
+      const classes = ['more'];
+
+      if (expand) {
+        classes.push('active');
+      }
+
+      return classes.join(' ');
+    }
+
+    more_button () {
+      const { items } = this.props;
+
+      if (items.slice(3, items.length).length > 0) {
+        return <a href="#" className="btn expand" onClick={e => this.expand(e)}>More <i className="fa fa-angle-double-down" /></a>;
+      }
+    }
+
+    expand (e) {
+      e.preventDefault();
+
+      const height = this.more_ref.current.scrollHeight;
+      this.setState({ more_height: `${height}px` });
+    }
+
     render () {
       const { title, items, date, company } = this.props;
+      const { more_height } = this.state;
       return (<div className={this.itemClass()} ref={this.ref}>
         <header>
           <h3>{title}</h3>
@@ -48,8 +81,12 @@ class Item extends Component {
         </header>
         <h5>{company}</h5>
         <ul>
-          {items.map((i, k) => <li key={k}>{i}</li>)}
+          {items.slice(0, 3).map((i, k) => <li key={k}>{i}</li>)}
         </ul>
+        <ul className={this.more_class()} style={{ height: more_height }} ref={this.more_ref}>
+          {items.slice(3, items.length).map((i, k) => <li key={k}>{i}</li>)}
+        </ul>
+        {this.more_button()}
       </div>);
     }
 }

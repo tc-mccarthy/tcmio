@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 if (!window.jQuery) {
   window.jQuery = function () {
-    console.log('jQuery not defined');
+    
   };
 }
 
