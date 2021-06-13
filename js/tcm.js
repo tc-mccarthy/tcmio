@@ -988,6 +988,11 @@ document.querySelectorAll("nav [href*='#']").forEach(function (n) {
  */
 
 var awards = [{
+  title: 'INMA Best Practice Award',
+  date: '2021',
+  project: 'Tracking the Coronavirus on LI',
+  link: 'https://projects.newsday.com/long-island/tracking-the-coronavirus-on-long-island/'
+}, {
   title: 'Peabody Award',
   date: '2019',
   project: 'Long Island Divided',
