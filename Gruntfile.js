@@ -44,17 +44,6 @@ module.exports = function (grunt) {
       },
     },
 
-    concat: {
-      dist: {
-        files: [
-          {
-            src: ["assets/js/*.js"],
-            dest: `${output_prefix}js/working/app.es6.js`,
-          },
-        ],
-      },
-    },
-
     babel: {
       options: {
         sourceMap: false,
