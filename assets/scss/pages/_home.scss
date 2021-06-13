@@ -58,23 +58,11 @@
     footer {
       .social {
         position: absolute;
-        bottom: 20px;
-        right: 10px;
+        bottom: 10px;
+        right: 15px;
         font-size: 1.3em;
       }
 
-      .contact {
-        position: absolute;
-        bottom: 20px;
-        left: 10px;
-        a {
-          &:before {
-            margin-right: 5px;
-          }
-        }
-      }
-
-      .contact,
       .social {
         a {
           color: rgb(210, 210, 210);
@@ -85,11 +73,8 @@
       }
 
       @media (min-width: 681px) {
-        .contact {
-          left: 15px;
-        }
-
         .social {
+          top: 10px;
           right: 15px;
         }
       }

@@ -825,22 +825,11 @@ nav ul li a {
 /* line 59, ../assets/scss/pages/_home.scss */
 #home #hp-hero footer .social {
   position: absolute;
-  bottom: 20px;
-  right: 10px;
+  bottom: 10px;
+  right: 15px;
   font-size: 1.3em;
 }
-/* line 66, ../assets/scss/pages/_home.scss */
-#home #hp-hero footer .contact {
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-}
-/* line 71, ../assets/scss/pages/_home.scss */
-#home #hp-hero footer .contact a:before {
-  margin-right: 5px;
-}
-/* line 79, ../assets/scss/pages/_home.scss */
-#home #hp-hero footer .contact a,
+/* line 67, ../assets/scss/pages/_home.scss */
 #home #hp-hero footer .social a {
   color: #d2d2d2;
   text-decoration: none;
@@ -848,12 +837,9 @@ nav ul li a {
   margin-top: 5px;
 }
 @media (min-width: 681px) {
-  /* line 88, ../assets/scss/pages/_home.scss */
-  #home #hp-hero footer .contact {
-    left: 15px;
-  }
-  /* line 92, ../assets/scss/pages/_home.scss */
+  /* line 76, ../assets/scss/pages/_home.scss */
   #home #hp-hero footer .social {
+    top: 10px;
     right: 15px;
   }
 }
